@@ -51,8 +51,12 @@ table {
 
 html, body {
     height: 100%;
+    color: #FFFFFF;
 }
 
+img {
+    max-width: 5rem;
+}
 .container {
     background-color: violet;
     height: 100%;
@@ -62,9 +66,81 @@ html, body {
 }
 
 .header {
-    background-color: red;
+    background-color: #FFFFFF;
     grid-column-start: 2;
     grid-column-end: 4;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.search-section {
+    display: grid;
+    background-color: red;
+    align-items: center;
+}
+
+.notification-section {
+    background-color: orange;
+    display: grid;
+    grid-template-columns: 70px 70px 70px;
+    justify-content: end;
+    align-items: center;
+    padding-right: 1rem;
+    gap: 12px;
+}
+
+.welcome-section {
+    background-color: pink;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+.welcome-section img {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    justify-self: end;
+}
+
+.welcome-section h3 {
+    align-self: end;
+}
+
+.welcome-section h2 {
+    align-self: start;
+}
+
+.button-section {
+    background-color: grey;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.notification-section img {
+    width: 2.5rem;
+}
+
+.search-icon {
+    width: 23px;
+}
+
+.search-input {
+    background-color: #f0f9ff;
+    border-radius: 5px;
+    border: 1px solid #bae6fd;
+    width: 50%;
+    height: 30px;
+}
+
+.search-items {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    padding-left: 2rem;
+    align-items: center;
 }
 
 .dashboard {
@@ -74,6 +150,38 @@ html, body {
     grid-row-start: 1;
     grid-row-end: 4;
 }
+
+.dashboard img {
+    width: 2rem;
+    margin-right: 10px;
+}
+
+.dashboard-head {
+    margin-left: 1vw;
+    margin-top: 1vw;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dashboard-head img {
+    width: 4rem;
+}
+
+.dashboard a {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+
+.general-navigation, .help-navigation {
+    margin-top: 5vh;
+    margin-left: 1vw;
+    
+}
+
+
 
 .projects {
     background-color: green;
