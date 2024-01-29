@@ -181,8 +181,6 @@ img {
     
 }
 
-
-
 .projects {
     background-color: green;
     grid-column-start: 2;
@@ -190,10 +188,66 @@ img {
     grid-row-end: 4;
 }
 
+.project-container {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    justify-items: center;
+}
+
+.project-items {
+    background-color: black;
+    width: 90%;
+    height: 150px;
+}
+
 .announcements {
     background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.announcements-container {
+    background-color: #f0f9ff;
+    height: 90%;
+    width: 95%;
+    border-radius: 8px;
+    align-self: center;
+}
+
+.announcements-items {
+    padding: 12px 20px;
+}
+
+.top-item {
+    border-top: 1px solid blue;
 }
 
 .trending {
     background-color: orange;
+}
+
+.trending-section {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    gap: 5px;
+}
+
+.trending-section img {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    justify-self: end;
+}
+
+.trending-section h3 {
+    align-self: end;
+}
+
+.trending-section h2 {
+    align-self: start;
 }
